@@ -9,13 +9,13 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# import sklearn.compose._column_transformer as ct
+import sklearn.compose._column_transformer as ct
 
-# class _RemainderColsList(list):
-#     pass
+class _RemainderColsList(list):
+    pass
 
-# ct._RemainderColsList = _RemainderColsList
-# # Streamlit app to load a saved pipeline (joblib/pkl) and provide single-record and batch predictions.
+ct._RemainderColsList = _RemainderColsList
+# Streamlit app to load a saved pipeline (joblib/pkl) and provide single-record and batch predictions.
 
 st.set_page_config(page_title="Exoplanet Classifier", page_icon="🚀", layout="wide")
 
@@ -514,3 +514,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
